@@ -11,7 +11,7 @@ class TodoItemsController < ApplicationController
     if @todo_item.destroy
       flash[:success] = "Todo list item was deleted."
     else
-      flas[:erros] = "todo list item couldnot be deleted."
+      flas[:erros] = "Todo list item couldnot be deleted."
     end
     redirect_to @todo_list
   end
